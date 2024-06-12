@@ -24,9 +24,13 @@ public class Main {
         DrinkType drinkType;
         switch (scanner.nextLine()) {
             case "Coffee":
+            case "COFFEE":
+            case "coffee":
                 drinkType = DrinkType.COFFEE;
                 break;
             case "Tea":
+            case "TEA":
+            case "tea":
             default:
                 drinkType = DrinkType.TEA;
         }
@@ -51,11 +55,11 @@ public class Main {
 
 
         // Ustalenie ceny wyjściowej
-        double initialPrice = 0.00;
+        //double initialPrice = 0.00;
 
 
         // Utworzenie nowego obiektu
-        Drink drink = new Drink(drinkType, drinkSize, initialPrice);
+        Drink drink = new Drink(drinkType, drinkSize, drinkSize.value);
 
 
         if(drinkType.equals(DrinkType.COFFEE)) {
