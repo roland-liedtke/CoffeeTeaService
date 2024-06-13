@@ -23,19 +23,19 @@ public enum DiscountCode {
      * Represents a 10% discount.
      * This code has a value of 0.1.
      */
-    TEA10(0.1),
+    DISCOUNT_10(0.1),
 
     /**
      * Represents a 20% discount.
      * This code has a value of 0.2.
      */
-    TEA20(0.2),
+    DISCOUNT_20(0.2),
 
     /**
      * Represents a 30% discount.
      * This code has a value of 0.3.
      */
-    TEA30(0.3);
+    DISCOUNT_30(0.3);
 
     public final double value;
 }
