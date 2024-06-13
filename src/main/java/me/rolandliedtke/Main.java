@@ -1,17 +1,5 @@
 package me.rolandliedtke;
 
-import me.rolandliedtke.model.DiscountCode;
-import me.rolandliedtke.model.Drink;
-import me.rolandliedtke.model.DrinkSize;
-import me.rolandliedtke.model.DrinkType;
-import me.rolandliedtke.service.CoffeeService;
-import me.rolandliedtke.service.DiscountService;
-import me.rolandliedtke.service.TeaService;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
