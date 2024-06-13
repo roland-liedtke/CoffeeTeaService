@@ -1,5 +1,6 @@
 package me.rolandliedtke.service;
 
+import me.rolandliedtke.exception.InvalidDiscountCodeException;
 import me.rolandliedtke.interfaces.discount.DiscountInterface;
 import me.rolandliedtke.model.DiscountCode;
 
@@ -11,7 +12,7 @@ public class DiscountService implements DiscountInterface {
             case "DISCOUNT_10" -> DiscountCode.DISCOUNT_10.value;
             case "DISCOUNT_20" -> DiscountCode.DISCOUNT_20.value;
             case "DISCOUNT_30" -> DiscountCode.DISCOUNT_30.value;
-            default -> DiscountCode.EMPTY.value;
+            default -> throw new InvalidDiscountCodeException("Niepoprawny kod: " + discountCode);
         };
     }
 }
